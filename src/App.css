@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@property --gradient-color-1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+
+@property --gradient-color-2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+  
+@keyframes TextPulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes TextBottomFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes TextTopFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.home-page-image {
+    background-image: url("../public/modern-equipped-computer-lab.jpg");
+    height: 480px;
+}
+
+.home-page-gradient {
+  background-image: linear-gradient(#EA580CD0, #EA580CD0);
+}
+
+.error-page-bg {
+
+}
+
+.top-fade-in-anim {
+    animation: TextTopFadeIn 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+}
+
+.bottom-fade-in-anim {
+    animation: TextBottomFadeIn 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+}
+
+.pulse-text-anim {
+    animation: TextPulse 5s cubic-bezier(0.65, 0, 0.35, 1) 5s infinite normal forwards;
+}
+
+.gradient-underline {
+    --gradient-color-1: #E0E0E0;
+    --gradient-color-2: #E0E0E0;
+    padding-block: 10px;
+    border-block-width: 3px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+    transition: color 2.5s, --gradient-color-1 0.5s, --gradient-color-2 5s;
+}
+
+.gradient-underline:hover {
+    --gradient-color-1: #F97316;
+    --gradient-color-2: #F97316;
+    color: var(--gradient-color-1);
+    border-image-source: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+}
+
+p::first-letter {
+  margin-left: 20px;
+}
