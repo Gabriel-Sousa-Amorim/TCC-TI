@@ -20,10 +20,10 @@ function Header(): JSX.Element {
             <nav className="w-full">
                 <ul className="flex justify-between">
                     <li className={navLinksProps}>
-                        <Link to="/">Início</Link>
+                        <Link to="/TCC-TI/">Início</Link>
                     </li>
                     <li className={navLinksProps}>
-                        <Dropdown url="/about" text="Sobre nós" className={`no-underline ${defaultThemeProp}`}>
+                        <Dropdown url="/TCC-TI/about" text="Sobre nós" className={`no-underline ${defaultThemeProp}`}>
                             <Link className={navLinksProps + " w-full text-start"} to="/about#mission">História</Link>
                             <Link className={navLinksProps + " w-full text-start"} to="/about#mission">Missão</Link>
                             <Link className={navLinksProps + " w-full text-start"} to="/about#vision">Visão</Link>
@@ -31,7 +31,7 @@ function Header(): JSX.Element {
                         </Dropdown>
                     </li>
                     <li className={navLinksProps}>
-                        <Link to="/Contact">Contato</Link>
+                        <Link to="/TCC-TI/Contact">Contato</Link>
                     </li>
                     <div className="flex flex-col justify-center ml-3">
                         <ThemeToggleButton />

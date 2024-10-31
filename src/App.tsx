@@ -14,7 +14,7 @@ import { ThemeProvider } from "./ThemeContext.js";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route 
-      path="/"
+      path="/TCC-TI/"
       errorElement={<Error />}
     >
       <Route index element={<Home />} />
