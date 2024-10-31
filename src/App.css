@@ -53,10 +53,11 @@
 
 * {
   font-family: "Roboto", sans-serif;
+  transition: color 250ms, background-color 250ms, border-color 250ms;
 }
 
 .home-page-image {
-    background-image: url("../public/modern-equipped-computer-lab.jpg");
+    background-image: url("./assets/modern-equipped-computer-lab.jpg");
     height: 480px;
 }
 
@@ -64,8 +65,11 @@
   background-image: linear-gradient(#EA580CD0, #EA580CD0);
 }
 
-.error-page-bg {
-
+.bg-teal-pattern {
+  background: linear-gradient(45deg, #35DBC780 20%, transparent 21%, transparent 79%, #35DBC780 80%) , linear-gradient(315deg, #35DBC780 20%, transparent 21%), linear-gradient(45deg, #35DBC7 20%, transparent 21%), linear-gradient(315deg, #35DBC7 20%, transparent 21%, transparent 79%, #35DBC780 80%);
+  background-color: #2DD4BF;
+  background-size: 10em 10em;
+  background-attachment: fixed;
 }
 
 .top-fade-in-anim {

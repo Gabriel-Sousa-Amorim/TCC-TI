@@ -1,9 +1,10 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 export type defaultProps = {
     classList?: string,
     children: ReactNode
 };
+
 
 export function H1({ classList, children }: defaultProps): JSX.Element {
     return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { 
   Route,
   createBrowserRouter,
@@ -6,11 +5,11 @@ import {
   RouterProvider
 } from "react-router-dom";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Error from "./pages/Error";
-
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Contact from "./pages/Contact.js";
+import Error from "./pages/Error.js";
+import { ThemeProvider } from "./ThemeContext.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,13 +21,16 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
     </Route>
+    
   )
 )
 
 function App() {
 
   return (
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   )
 }
 

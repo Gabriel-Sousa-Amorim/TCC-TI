@@ -1,5 +1,6 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../ThemeContext.js";
 
 type DropdownProps = {
     url: string,
@@ -9,8 +10,12 @@ type DropdownProps = {
 };
 
 export default function Dropdown(props: DropdownProps): JSX.Element {
+    const { theme } = useTheme();
+    const defaultThemeProp = `${theme === 'dark' ? 'bg-neutral-950 text-neutral-50' : 'bg-neutral-50 text-neutral-950'}`;
+
     return (
-        <div className="flex flex-col items-center max-h-5 w-20 text-center"
+
+        <div className={`flex flex-col items-center max-h-5 w-20 text-center z-50 ${defaultThemeProp}`}
         onMouseEnter={
             () => {
                 const linksDropdown: any = document.getElementById(`${props.url}-links-dropdown`);
@@ -29,7 +34,7 @@ export default function Dropdown(props: DropdownProps): JSX.Element {
         }
         >
         <Link className={ props.className } to={props.url}>{ props.text }</Link>
-            <div id={props.url + "-links-dropdown"} className="w-80 pl-2 pr-10 py-2 z-50 relative border-2 border-teal-600 dark:border-teal-400 rounded flex flex-col items-start bg-neutral-100 dark:bg-neutral-900 transition-all duration-250 hidden opacity-0 ">
+            <div id={props.url + "-links-dropdown"} className={`w-80 p-4 relative border-2 rounded-2xl rounded flex flex-col items-start hidden ${defaultThemeProp}`}>
                 { props.children }
             </div>
         </div>
