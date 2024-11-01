@@ -24,16 +24,25 @@ function About(): JSX.Element {
           <section className='flex flex-col gap-2'>
             <H2 classList={defaultThemeProp + ' my-4'}>História</H2>
             <p className={defaultThemeProp}>
-              4 amigos se conheceram durante Fundamental I e II em uma escola no bairro Brasilândia, porém por questões próprias no Ensino Médio se separaram e mudaram de escola cada um indo para uma região diferente de São Paulo, exceto Ryan, que continuou na Brasilândia com sua família que realiza trabalho de reciclagem. Os 4 não perderam o contato até idade adulta, mantendo as relações se encontrando com frequência. Durante um desses encontros discutindo sobre problemas e ideias, Maria compartilhou que estava desempregada e que não via um investimento ou oportunidades para profissionais de tecnologia nas periferias, Ryan viu que o descarte de eletrônicos não era realizado corretamente. João, vendo toda situação, propôs uma união, a fim de criar uma empresa de tecnologia visando contratar pessoas da periferia e de favelas, com projetos sustentáveis. Giovanna sugeriu que para o nome empresa, PIPA seria interessante, é um elemento característico da periferia e das favelas, que é uma inovação, por ser feito com materiais simples, e que mesmo assim chegam as alturas. O grupo entrou em consenso e definiu como cores principais o laranja, e verde água.
+              A PIPA nasceu do reencontro de quatro jovens amigos da Brasilândia, São Paulo. Maria Oliveira, Ryan Santos, João Pereira e Giovanna Souza se conheceram na Escola Prof. Jair Toledo Xavier, onde desenvolveram uma amizade que resistiu à distância. Mesmo após seguirem caminhos distintos no Ensino Médio, devido a questões econômicas e sociais que impactaram cada um deles e levaram suas famílias a tomarem rumos diferentes, mantiveram-se unidos, encontrando-se regularmente para trocar ideias e apoiar-se mutuamente.
+            </p>
+            <p className={defaultThemeProp}>
+              Em um desses encontros, Maria compartilhou suas dificuldades no mercado de trabalho. Como profissional de tecnologia, sentia que o ambiente corporativo oferecia poucas oportunidades para talentos das periferias. Ryan, que havia seguido no bairro e apoiava o negócio de reciclagem da família, comentou sobre o crescente problema do descarte inadequado de eletrônicos. João, sensível à situação dos amigos e inspirado por um desejo de mudança, propôs criar uma empresa voltada para consultoria tecnológica e sustentabilidade, que empregasse e capacitasse pessoas da periferia.
+            </p>
+            <p className={defaultThemeProp}>
+              Com a sugestão de Giovanna, o nome “PIPA” foi escolhido, a pipa sendo uma tecnologia simples e inovadora, por ser feita de em sua maioria de papel e ainda assim cumprir um ato desafiador. Sendo um elemento característico da periferia, reflete simplicidade e resiliência, provando que o improvável chega as alturas.
+            </p>
+            <p className={defaultThemeProp}>
+              Assim, a PIPA surgiu como uma empresa que não só leva a tecnologia à periferia, mas também cria oportunidades para que talentos locais ascendam profissionalmente, mantendo o compromisso com a sustentabilidade e a inovação. A identidade visual com as cores laranja e verde água representa o entusiasmo e a esperança de um futuro mais inclusivo e ambientalmente responsável.
             </p>
           </section>
           <section className='flex flex-col gap-2' id='mission'>
             <H2 classList={defaultThemeProp + ' my-4'}>Missão</H2>
-            <p className={defaultThemeProp}>Continuar a exercer nossos trabalhos com excelência, promovendo projetos de capacitação nas periferias, oferecendo oportunidades de aprendizado prático. Assim formando profissionais qualificados na nossa companhia. Enquanto há a aplicação e desenvolvimento de planos de sustentabilidade as nossas atividades com ajuda de demais empresas.</p>
+            <p className={defaultThemeProp}>Continuar a promovendo nossos projetos de capacitação nas periferias, oferecendo oportunidades de aprendizado prático. Enquanto há a aplicação e desenvolvimento de planos de sustentabilidade as nossas atividades.</p>
           </section>
           <section className='flex flex-col gap-2' id='vision'>
             <H2 classList={defaultThemeProp + ' my-4'}>Visão</H2>
-            <p className={defaultThemeProp}>Nos próximos anos, uma de nossas metas a serem alcançadas são: adquirir reconhecimento por nossas iniciativas não apenas como uma consultoria inovadora e sustentável, mas também como uma organização humanizada e diversa, comprometida com o desenvolvimento social e profissional de todos os envolvidos.</p>
+            <p className={defaultThemeProp}>Nos próximos cinco anos, uma de nossas metas a serem alcançadas são: adquirir reconhecimento por nossas trabalhos sustentáveis, inovadoras e humanizadas  comprometida.</p>
           </section>
           <section className='flex flex-col gap-2' id='values'>
             <H2 classList={defaultThemeProp + ' my-4'}>Valores</H2>

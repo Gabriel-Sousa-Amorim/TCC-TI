@@ -17,7 +17,7 @@ function Error(): JSX.Element {
         <Article classList='my-10'>
           <section className='flex flex-col gap-2'>
             <figure className='flex items-center gap-4 py-2'>
-              <img className="w-10" src="./assets/error-robot.svg" alt="Robot icon" />
+              <img className="w-10" src="/error-robot.svg" alt="Robot icon" />
               <figcaption>
                 <H1 classList='text-orange-500'>OOPS...</H1>
               </figcaption>
@@ -26,7 +26,7 @@ function Error(): JSX.Element {
             <p className={textProps}>
               Provavelmente o erro ocorreu pela página não existir.
             </p>
-            <Link className={textProps + "hover:text-teal-400 transition-colors font-black underline"} to="/">Clique aqui para voltar ao início</Link>
+            <Link className={textProps + "hover:text-teal-400 transition-colors font-black underline"} to="/TCC-TI/">Clique aqui para voltar ao início</Link>
           </section>
         </Article>
       </Main>

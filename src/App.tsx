@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home.js";
-import About from "./pages/About.js";
-import Contact from "./pages/Contact.js";
-import Error from "./pages/Error.js";
+import About from "./Sobre-Nos/About.js";
+import Contact from "./Contato/Contact.js";
+import Error from "./error/Error.js";
 import { ThemeProvider } from "./ThemeContext.js";
 
 const router = createBrowserRouter(
@@ -18,8 +18,8 @@ const router = createBrowserRouter(
       errorElement={<Error />}
     >
       <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="Sobre-Nos" element={<About />} />
+      <Route path="Contato" element={<Contact />} />
     </Route>
     
   )
