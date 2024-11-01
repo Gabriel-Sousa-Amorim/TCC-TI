@@ -8,7 +8,7 @@ import {
 import Home from "./pages/Home.js";
 import About from "./Sobre-Nos/About.js";
 import Contact from "./Contato/Contact.js";
-import Error from "./error/Error.js";
+import Error from "./Erro/Error.js";
 import { ThemeProvider } from "./ThemeContext.js";
 
 const router = createBrowserRouter(
