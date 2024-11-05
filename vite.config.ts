@@ -16,7 +16,7 @@ function rewriteSlashToIndexHtml(): PluginOption {
       // rewrite / as index.html
       server.middlewares.use('/TCC-TI/', (req:any, _:any, next:any) => {
         if (req.url === '/TCC-TI/') {
-          req.url = '/index.html'
+          req.url = '/TCC-TI/'
         }
         next()
       })

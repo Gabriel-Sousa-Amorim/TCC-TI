@@ -1,7 +1,7 @@
 import Header from "../components/containers/Header.js";
 import Main from "../components/containers/Main.js";
 import Footer from "../components/containers/Footer.js";
-import { H1, H2 } from "../components/elements/Headings.js";
+import { H1, H2, H4 } from "../components/elements/Headings.js";
 import Article from '../components/containers/Article.js';
 import { useTheme } from '../ThemeContext.js';
 
@@ -16,7 +16,7 @@ function About(): JSX.Element {
       <Main>
         <Article classList='my-10'>
           <section className='flex flex-col gap-2'>
-            <H1 classList='text-teal-600 dark:text-teal-500 border-y-4 border-teal-600 dark:border-teal-500 text-center py-2 my-2'>Sobre Nós</H1>
+            <H1 classList='text-teal-600 text-teal-500 border-y-4 border-teal-600 dark:border-teal-500 text-center py-2 my-2'>Sobre Nós</H1>
             <p className={defaultThemeProp}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi repudiandae vero optio deserunt, ullam a reiciendis labore velit fuga, laudantium dolorem dolorum nihil est quam molestias minima recusandae unde?
             </p>
@@ -55,6 +55,24 @@ function About(): JSX.Element {
               <li className={defaultThemeProp}><strong>Respeito</strong>: A base de relações saudáveis, onde as opiniões, sentimentos e direitos de cada indivíduo são valorizados, promovendo um ambiente harmonioso e produtivo.</li>
               <li className={defaultThemeProp}><strong>Organização</strong>: A capacidade de estruturar e planejar ações de forma eficaz, garantindo que recursos e esforços sejam utilizados da melhor maneira possível para alcançar objetivos comuns.</li>
             </ul>
+          </section>
+        </Article>
+        <Article classList='bg-orange-300 py-16'>
+        <section className='flex flex-col gap-8 items-center'>
+          <div>
+            <H2 classList='text-orange-800 text-8xl'>Nossas ODSs</H2>
+          </div>
+          <div className="flex h-48 items-stretch gap-12">
+            <div className="flex w-52 h-52 flex-col justify-center bg-orange-400 p-5 rounded-xl">
+              <H2 classList="text-orange-900 text-center text-7xl">5</H2>
+            </div>
+            <div className="flex w-52 h-52 flex-col justify-center bg-orange-400 p-5 rounded-xl">
+              <H2 classList="text-orange-900 text-center text-7xl">8</H2>
+            </div>
+              <div className="flex w-52 h-52 flex-col justify-center bg-orange-400 p-5 rounded-xl">
+              <H2 classList="text-orange-900 text-center text-7xl">15</H2>
+            </div>
+          </div>
           </section>
         </Article>
       </Main>

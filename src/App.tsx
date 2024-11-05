@@ -6,9 +6,10 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home.js";
-import About from "./Sobre-Nos/About.js";
-import Contact from "./Contato/Contact.js";
-import Error from "./Erro/Error.js";
+import About from "./pages/About.js";
+import Contact from "./pages/Contact.js";
+import Error from "./pages/Error.js";
+import "./App.css";
 import { ThemeProvider } from "./ThemeContext.js";
 
 const router = createBrowserRouter(

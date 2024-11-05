@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { H1, H2 } from "../components/elements/Headings.js";
 import Article from '../components/containers/Article.js';
 import { useTheme } from '../ThemeContext.js';
-
+import robotErrorIcon from '../assets/error-robot.svg';
 
 function Error(): JSX.Element {
   const { theme } = useTheme();
@@ -17,7 +17,7 @@ function Error(): JSX.Element {
         <Article classList='my-10'>
           <section className='flex flex-col gap-2'>
             <figure className='flex items-center gap-4 py-2'>
-              <img className="w-10" src="/error-robot.svg" alt="Robot icon" />
+              <img className="w-10" src={ robotErrorIcon } alt="Robot error icon" />
               <figcaption>
                 <H1 classList='text-orange-500'>OOPS...</H1>
               </figcaption>
