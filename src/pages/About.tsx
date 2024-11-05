@@ -1,7 +1,7 @@
 import Header from "../components/containers/Header.js";
 import Main from "../components/containers/Main.js";
 import Footer from "../components/containers/Footer.js";
-import { H1, H2, H4 } from "../components/elements/Headings.js";
+import { H1, H2 } from "../components/elements/Headings.js";
 import Article from '../components/containers/Article.js';
 import { useTheme } from '../ThemeContext.js';
 

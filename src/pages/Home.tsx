@@ -6,8 +6,6 @@ import Article from '../components/containers/Article.js';
 import Footer from "../components/containers/Footer.js";
 import { H1, H2 } from "../components/elements/Headings.js";
 
-import backgroundImage from "../assets/modern-equipped-computer-lab.jpg";
-
 import useIsVisible from "./Other.js";
 import { useRef } from "react";
 import { Link } from 'react-router-dom';

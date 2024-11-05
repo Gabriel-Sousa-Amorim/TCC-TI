@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTheme } from '../../ThemeContext.js'; // Adjust the path accordingly
 
 export type defaultProps = {
