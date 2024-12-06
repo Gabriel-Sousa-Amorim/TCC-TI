@@ -47,6 +47,7 @@ function Contact(): JSX.Element {
                 <span className={ textThemeProps + " font-bold" }>Motivo de Contato:</span>
               </label>
               <select name="" id="" className={inputProps}>
+                <option value="">Trabalhe Conosco</option>
                 <option value="">Suporte técnico</option>
                 <option value="">Consultoria de desenvolvimento</option>
                 <option value="">Dúvidas</option>
@@ -82,7 +83,8 @@ function Contact(): JSX.Element {
             <div>
               <H3 classList={ textThemeProps }>Endereço:</H3>
               <ul className={textThemeProps  + ' flex flex-col gap-2 list-disc list-inside pt-2 pl-8'}>
-                <li className={ textThemeProps }>Av. Inovação, 456 – Sala 1001 São Paulo, SP – 01000-000</li>
+                <li className={ textThemeProps }>Rua Alferes Magalhães, 92 – 1 Andar - São Paulo, SP – 02034-006
+                </li>
               </ul>
             </div>
             <div>
@@ -90,9 +92,7 @@ function Contact(): JSX.Element {
               <p className={ textThemeProps }>Fique por dentro de nossas novidades e acompanhe as últimas tendências em TI:</p>
               <nav>
                 <ul className={textThemeProps  + ' flex flex-col gap-2 list-disc list-inside pt-2 pl-8'}>
-                  <li><Link className={ linkProps } target='_blank' to="" >LinkedIn</Link></li>
-                  <li><Link className={ linkProps } target='_blank' to="" >Twitter</Link></li>
-                  <li><Link className={ linkProps } target='_blank' to="" >Instagram</Link></li>
+                  <li><Link className={ linkProps } target='_blank' to="https://www.instagram.com/pipa_consultoria/" >Instagram</Link></li>
                 </ul>
               </nav>
             </div>

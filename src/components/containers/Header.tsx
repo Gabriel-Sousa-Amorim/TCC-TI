@@ -21,7 +21,7 @@ function Header(): JSX.Element {
                 </Link>
             </div>
             <nav className="w-full">
-                <ul className="flex justify-between">
+                <ul className="flex flex-col sm:flex-col md:flex-row items-center gap-2 md:justify-between">
                     <li className={navLinksProps}>
                         <Link to="/TCC-TI/">Início</Link>
                     </li>
