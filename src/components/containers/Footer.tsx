@@ -3,7 +3,6 @@ import { useTheme } from "../../ThemeContext.js";
 import pipaDarkColored from "../../assets/Pipa Dark Colored.svg"
 
 function Footer(): JSX.Element {
-    const { theme } = useTheme();
     const defaultThemeProp = `bg-neutral-950`;
     return (
         <footer className={`min-h-40 py-5 px-8 md:px-32 lg:px-48 xl:px-64 2xl:px-96 flex justify-between items-center text-neutral-50 ${defaultThemeProp}`}>
