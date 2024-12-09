@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../../ThemeContext.js";
 import pipaDarkColored from "../../assets/Pipa Dark Colored.svg"
 
 function Footer(): JSX.Element {
